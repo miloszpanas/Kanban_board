@@ -1,4 +1,71 @@
 * {
   box-sizing: border-box; }
 
+body {
+  background: url("https://images.unsplash.com/photo-1483546416237-76fd26bbcdd1?ixlib=rb-0.3.5&s=0518da1439a395a418b5c2b91b9f43e8&auto=format&fit=crop&w=1350&q=80") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Playfair Display', serif; }
+
+#board .column-container {
+  display: flex;
+  justify-content: center; }
+
+#board h1 {
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px #000000;
+  font-size: 3.2em; }
+
+#board button.create-column {
+  font-size: 1.1em;
+  margin-bottom: 0.4em;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  text-shadow: 1px 1px #000000; }
+  #board button.create-column:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.column-container .column:last-of-type {
+  margin-right: 0; }
+
+div.column {
+  flex-direction: column;
+  width: 33%;
+  height: auto;
+  background-color: #E2E4E6;
+  border: 2px solid black;
+  border-radius: 15px;
+  margin-right: 0.5em;
+  padding: 0 .625em 0 .625em; }
+  div.column .column-card-list.ui-sortable {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+    div.column .column-card-list.ui-sortable .card {
+      background-color: #FFFFFF;
+      border-radius: 0 0 3px 3px; }
+    div.column .column-card-list.ui-sortable .card:hover {
+      background: #ffffffb0;
+      cursor: pointer; }
+
+div.column .column-title {
+  text-align: center;
+  text-shadow: 2px 2px #FFFFFF; }
+
+div.column button.add-card {
+  background-color: #4CAF50;
+  margin-bottom: 5px;
+  color: white; }
+
+div.column button.btn-delete {
+  background-color: red;
+  color: white;
+  margin-right: 2px;
+  margin-bottom: 5px; }
+
 /*# sourceMappingURL=style.css.map */
