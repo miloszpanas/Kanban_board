@@ -11,7 +11,8 @@ body {
 
 #board .column-container {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  align-items: flex-start; }
 
 #board h1 {
   text-align: center;
@@ -43,6 +44,7 @@ div.column {
   margin-right: 0.5em;
   padding: 0 .625em 0 .625em; }
   div.column .column-card-list.ui-sortable {
+    min-height: 6.25em;
     list-style-type: none;
     padding: 0;
     margin: 0; }
@@ -53,7 +55,8 @@ div.column {
       background: #ffffffb0;
       cursor: pointer; }
     div.column .column-card-list.ui-sortable .card p.card-description {
-      font-size: 1.2em; }
+      font-size: 1.2em;
+      overflow-wrap: break-word; }
 
 div.column .column-title {
   text-align: center;
@@ -65,9 +68,10 @@ div.column button.add-card {
   color: white; }
 
 div.column button.btn-delete {
+  line-height: 1.125rem;
+  float: right;
   background-color: red;
   color: white;
-  margin-right: 2px;
-  margin-bottom: 5px; }
+  margin: 1px 2px 5px 0; }
 
 /*# sourceMappingURL=style.css.map */
