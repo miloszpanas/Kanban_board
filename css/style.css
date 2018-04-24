@@ -48,10 +48,12 @@ div.column {
     margin: 0; }
     div.column .column-card-list.ui-sortable .card {
       background-color: #FFFFFF;
-      border-radius: 0 0 3px 3px; }
+      border-radius: 5px; }
     div.column .column-card-list.ui-sortable .card:hover {
       background: #ffffffb0;
       cursor: pointer; }
+    div.column .column-card-list.ui-sortable .card p.card-description {
+      font-size: 1.2em; }
 
 div.column .column-title {
   text-align: center;

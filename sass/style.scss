@@ -53,11 +53,14 @@ div.column {
         margin: 0;
         .card {
             background-color: #FFFFFF;
-            border-radius: 0 0 3px 3px
+            border-radius: 5px;
         }
         .card:hover {
             background:#ffffffb0;
             cursor: pointer;
+        }
+        .card p.card-description {
+            font-size: 1.2em;
         }
     }
 }

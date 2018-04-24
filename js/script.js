@@ -22,7 +22,7 @@ $(function() {
             var $columnTitle = $('<h2>').addClass('column-title').text(self.name);
             var $columnCardList = $('<ul>').addClass('column-card-list');
             var $columnDelete = $('<button>').addClass('btn-delete').text('x');
-            var $columnAddCard = $('<button>').addClass('add-card').text('Add a card');
+            var $columnAddCard = $('<button>').addClass('add-card').text('Add new card');
 
             // DELETING A COLUMN
             $columnDelete.click(function() {
@@ -102,7 +102,7 @@ $(function() {
       });
          // CREATING COLUMNS
         var todoColumn = new Column('To do');
-        var doingColumn = new Column('Doing');
+        var doingColumn = new Column('In Progress');
         var doneColumn = new Column('Done');
 
         // ADDING COLUMNS TO THE BOARD
@@ -112,7 +112,7 @@ $(function() {
 
         // CREATING CARDS
         var card1 = new Card('New task');
-        var card2 = new Card('Create kanban boards');
+        var card2 = new Card('Task being performed now');
 
         // ADDING CARDS TO COLUMNS
         todoColumn.addCard(card1);
